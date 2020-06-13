@@ -13,6 +13,7 @@ import torch.nn.functional as F
 
 import six
 from six.moves import cPickle
+device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 bad_endings = ['with','in','on','of','a','at','to','for','an','this','his','her','that']
 bad_endings += ['the']
